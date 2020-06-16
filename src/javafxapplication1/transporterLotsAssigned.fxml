@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.TransporterLotsAssignedController">
+   <children>
+      <TableView fx:id="tableView" layoutX="22.0" layoutY="63.0" prefHeight="335.0" prefWidth="595.0">
+        <columns>
+          <TableColumn fx:id="lotId" prefWidth="75.0" text="Lot ID" />
+          <TableColumn fx:id="status" prefWidth="161.0" text="Status" />
+            <TableColumn fx:id="truck" prefWidth="162.0" text="Truck" />
+            <TableColumn fx:id="timeSlot" prefWidth="197.0" text="Time Slot " />
+        </columns>
+      </TableView>
+      <Button fx:id="goBack" layoutX="593.0" layoutY="418.0" mnemonicParsing="false" onAction="#goBackEvent" prefHeight="38.0" prefWidth="87.0" text="Back" />
+      <Text layoutX="465.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="History of all Lots Assigned">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
