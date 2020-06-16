@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.WarehouseSettingsPageController">
+   <children>
+      <Text layoutX="505.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warehouse Settings">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Line endX="3.0" endY="300.0" layoutX="368.0" layoutY="142.0" startX="3.0" startY="-27.0" />
+      <Button fx:id="addWarehouse" layoutX="30.0" layoutY="504.0" mnemonicParsing="false" onAction="#addWarehouseEvent" prefHeight="40.0" prefWidth="136.0" text="Add Warehouse" />
+      <Button fx:id="deleteWarehouse" layoutX="436.0" layoutY="90.0" mnemonicParsing="false" onAction="#deleteWarehouseEvent" prefHeight="48.0" prefWidth="174.0" text="Delete Warehouse" />
+      <Button fx:id="editWarehouse" layoutX="436.0" layoutY="173.0" mnemonicParsing="false" onAction="#editWarehouseEvent" prefHeight="48.0" prefWidth="174.0" text="Edit Warehouse Data" />
+      <Button fx:id="goBack" layoutX="580.0" layoutY="510.0" mnemonicParsing="false" onAction="#goBackEvent" prefHeight="34.0" prefWidth="71.0" text="Done" />
+      <Text layoutX="46.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warehouse you are assigned...">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="warehouseManager" layoutX="105.0" layoutY="279.0" onAction="#warehouseToManager" />
+      <Button fx:id="productsButton" layoutX="436.0" layoutY="256.0" mnemonicParsing="false" onAction="#productsEvent" prefHeight="48.0" prefWidth="174.0" text="Products" />
+      <Button fx:id="manageTransporters" layoutX="436.0" layoutY="341.0" mnemonicParsing="false" onAction="#manageTransportersEvent" prefHeight="48.0" prefWidth="174.0" text="Transporters" />
+      <Button fx:id="manageTrucks" layoutX="436.0" layoutY="420.0" mnemonicParsing="false" onAction="#manageTrucksEvent" prefHeight="48.0" prefWidth="174.0" text="Trucks" />
+   </children>
+</AnchorPane>

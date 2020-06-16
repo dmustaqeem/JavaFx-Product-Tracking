@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.AddNewWarehouseController">
+   <children>
+      <Text layoutX="44.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Warehouse">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="46.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="79.2578125">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manager Assigned(CNIC)">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Capacity">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warehouse Type">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Next Location" wrappingWidth="117.9375">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="45.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Previous Location" wrappingWidth="141.9375">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="46.0" layoutY="398.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Distance from Next Location" wrappingWidth="232.9375">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Distance from Previous Location" wrappingWidth="232.9375">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="wName" layoutX="338.0" layoutY="109.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="mCnic" layoutX="338.0" layoutY="161.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="wCapacity" layoutX="338.0" layoutY="204.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="wType" layoutX="338.0" layoutY="247.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="wLocation" layoutX="338.0" layoutY="290.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="nextLocation" layoutX="338.0" layoutY="335.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="distNext" layoutX="338.0" layoutY="379.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="prevLocation" layoutX="338.0" layoutY="420.0" prefHeight="25.0" prefWidth="201.0" />
+      <TextField fx:id="distPrevious" layoutX="338.0" layoutY="459.0" prefHeight="25.0" prefWidth="201.0" />
+      <Button fx:id="save" layoutX="27.0" layoutY="551.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="25.0" prefWidth="95.0" text="Save and Exit" />
+      <Button fx:id="goBack" layoutX="538.0" layoutY="551.0" mnemonicParsing="false" onAction="#goBackEvent" prefHeight="25.0" prefWidth="95.0" text="Back" />
+      <Text layoutX="42.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Is Collector(Yes/No)" wrappingWidth="232.9375">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="yesCollector" layoutX="338.0" layoutY="507.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="isCollector" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="noCollector" layoutX="420.0" layoutY="507.0" mnemonicParsing="false" text="No" toggleGroup="$isCollector" />
+   </children>
+</AnchorPane>

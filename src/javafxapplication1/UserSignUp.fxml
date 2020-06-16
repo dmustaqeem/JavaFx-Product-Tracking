@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.UserSignUpController">
+   <children>
+      <Text layoutX="431.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New User" wrappingWidth="211.13671875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNIC">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="30.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="save" layoutX="22.0" layoutY="513.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="32.0" prefWidth="120.0" text="Save and Exit" />
+      <Button fx:id="goBack" layoutX="512.0" layoutY="513.0" mnemonicParsing="false" onAction="#goBack" prefHeight="32.0" prefWidth="71.0" text="Back" />
+      <PasswordField fx:id="passwordText" layoutX="149.0" layoutY="442.0" prefHeight="26.0" prefWidth="211.0" />
+      <TextField fx:id="nameUser" layoutX="149.0" layoutY="78.0" prefHeight="26.0" prefWidth="173.0" />
+      <TextField fx:id="ageUser" layoutX="149.0" layoutY="138.0" prefHeight="26.0" prefWidth="173.0" />
+      <TextField fx:id="uCnic" layoutX="149.0" layoutY="197.0" prefHeight="26.0" prefWidth="173.0" />
+      <TextField fx:id="uPhone" layoutX="149.0" layoutY="256.0" prefHeight="26.0" prefWidth="173.0" />
+      <TextField fx:id="usernameText" layoutX="149.0" layoutY="390.0" prefHeight="26.0" prefWidth="211.0" />
+      <Text fx:id="address" layoutX="23.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="addressText" layoutX="149.0" layoutY="318.0" prefHeight="26.0" prefWidth="385.0" />
+   </children>
+</AnchorPane>

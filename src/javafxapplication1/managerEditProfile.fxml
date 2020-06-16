@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.ManagerEditProfileController">
+   <children>
+      <Text layoutX="25.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Profile " wrappingWidth="119.451171875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="56.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="56.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="56.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameText" layoutX="238.0" layoutY="136.0" prefHeight="25.0" prefWidth="231.0" />
+      <TextField fx:id="addressText" layoutX="238.0" layoutY="242.0" prefHeight="25.0" prefWidth="231.0" />
+      <TextField fx:id="phoneText" layoutX="238.0" layoutY="187.0" prefHeight="25.0" prefWidth="231.0" />
+      <Button fx:id="save" layoutX="39.0" layoutY="349.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="25.0" prefWidth="94.0" text="Save and Exit " />
+      <Button fx:id="goBack" layoutX="504.0" layoutY="349.0" mnemonicParsing="false" onAction="#goBackEvent" prefHeight="25.0" prefWidth="71.0" text="Back" />
+   </children>
+</AnchorPane>

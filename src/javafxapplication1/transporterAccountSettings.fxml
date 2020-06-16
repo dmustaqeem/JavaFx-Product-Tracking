@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.TransporterAccountSettingsController">
+   <children>
+      <Text layoutX="476.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="phone" layoutX="561.0" layoutY="323.0" prefHeight="25.0" prefWidth="223.0" promptText="New Phone Number" />
+      <Text layoutX="476.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="address" layoutX="561.0" layoutY="376.0" prefHeight="25.0" prefWidth="309.0" promptText="New Address" />
+      <Line endX="-47.0" endY="341.0" layoutX="514.0" layoutY="120.0" startX="-47.0" startY="-29.0" />
+      <PasswordField fx:id="changePass" layoutX="504.0" layoutY="118.0" prefHeight="25.0" prefWidth="251.0" promptText="Change Password" />
+      <PasswordField fx:id="rePass" layoutX="504.0" layoutY="162.0" prefHeight="25.0" prefWidth="251.0" promptText="Re-Enter Password" />
+      <Button fx:id="changePassB" layoutX="630.0" layoutY="201.0" mnemonicParsing="false" onAction="#changePassEvent" prefHeight="37.0" prefWidth="192.0" text="Change Password" />
+      <Text layoutX="677.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transporter Account Settings">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="deleteAccount" layoutX="14.0" layoutY="506.0" mnemonicParsing="false" onAction="#deleteAccount" prefHeight="37.0" prefWidth="167.0" text="Delete Account" />
+      <Button fx:id="save" layoutX="748.0" layoutY="506.0" mnemonicParsing="false" onAction="#saveEvent" prefHeight="37.0" prefWidth="121.0" text="Save and Exit" />
+      <Text layoutX="27.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="132.0" layoutY="150.0" prefHeight="25.0" prefWidth="223.0" />
+      <Text layoutX="26.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="currPhone" layoutX="132.0" layoutY="207.0" prefHeight="25.0" prefWidth="223.0" />
+      <Text layoutX="26.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lisence">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="lisenceText" layoutX="132.0" layoutY="263.0" prefHeight="25.0" prefWidth="223.0" />
+      <Text layoutX="26.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="currAddress" layoutX="132.0" layoutY="323.0" prefHeight="25.0" prefWidth="324.0" />
+   </children>
+</AnchorPane>

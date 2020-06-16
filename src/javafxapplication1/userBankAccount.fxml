@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.UserBankAccountController">
+   <children>
+      <Text layoutX="27.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="accountNumber" layoutX="164.0" layoutY="93.0" />
+      <Text layoutX="27.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="credit" layoutX="164.0" layoutY="149.0" />
+      <Text layoutX="29.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Debit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="debit" layoutX="164.0" layoutY="207.0" />
+      <Text layoutX="27.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Balance">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="balance" layoutX="164.0" layoutY="269.0" />
+      <Line endX="-100.0" endY="240.0" layoutX="431.0" layoutY="73.0" startX="-100.0" />
+      <TextField fx:id="newCredit" layoutX="378.0" layoutY="139.0" prefHeight="25.0" prefWidth="202.0" promptText="Enter Amount" />
+      <Button fx:id="addCredit" layoutX="460.0" layoutY="181.0" mnemonicParsing="false" onAction="#addCreditEvent" prefHeight="25.0" prefWidth="124.0" text="Add Credit" />
+      <Button fx:id="udpate" layoutX="21.0" layoutY="334.0" mnemonicParsing="false" onAction="#updateAccountEvent" prefHeight="41.0" prefWidth="124.0" text="Update Account" />
+      <Button fx:id="goBack" layoutX="508.0" layoutY="334.0" mnemonicParsing="false" onAction="#goBack" prefHeight="41.0" prefWidth="72.0" text="Done" />
+      <Text layoutX="457.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Details">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

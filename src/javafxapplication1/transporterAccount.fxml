@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.TransporterAccountController">
+   <children>
+      <Line endX="-100.0" endY="271.0" layoutX="440.0" layoutY="52.0" startX="-100.0" />
+      <Button fx:id="lotsAssigned" layoutX="446.0" layoutY="90.0" mnemonicParsing="false" onAction="#lotAssignedEvent" prefHeight="48.0" prefWidth="186.0" text="Lots Assigned" />
+      <Button fx:id="notifiactionSent" layoutX="446.0" layoutY="176.0" mnemonicParsing="false" onAction="#notificationSentEvent" prefHeight="48.0" prefWidth="186.0" text="Notifications Sent" />
+      <Button fx:id="currentLot" layoutX="446.0" layoutY="257.0" mnemonicParsing="false" onAction="#currentLotEvent" prefHeight="48.0" prefWidth="186.0" text="Current Lot" />
+      <Button fx:id="accountSettings" layoutX="14.0" layoutY="349.0" mnemonicParsing="false" onAction="#accountSettingsEvent" prefHeight="37.0" prefWidth="170.0" text="Account Settings" />
+      <Button fx:id="goBack" layoutX="594.0" layoutY="349.0" mnemonicParsing="false" onAction="#goBackEvent" prefHeight="37.0" prefWidth="76.0" text="Log out" />
+      <Label fx:id="welcomeText" layoutX="25.0" layoutY="188.0" prefHeight="17.0" prefWidth="287.0" text="Label">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
